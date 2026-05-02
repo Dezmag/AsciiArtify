@@ -88,7 +88,14 @@ Docker Desktop має обмеження ліцензії для комерці�
 
 ## 🚀 Демонстрація (k3d)
 
+## 🎥 Demo
+
+<p align="center">
+  <img src="./demo.gif" width="800"/>
+</p>
+
 ### 1. Створення кластеру
 
 ```bash
 k3d cluster create mycluster
+
