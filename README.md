@@ -3,7 +3,7 @@
 > Kubernetes PoC for AI-based Image → ASCII conversion system
 
 <p align="center">
-  <img src="./doc/demo.gif" width="800"/>
+  <img src="AsciiArtify/demo.gif" width="800"/>
 </p>
 
 ---
