@@ -1,3 +1,4 @@
-## 📄 Concept
+## 📄 Documentation
 
-👉 [Open Concept.md](./doc/Concept.md)
+- [Concept Document](./doc/Concept.md)
+- [Demo](./doc/demo.gif)
