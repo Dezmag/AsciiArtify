@@ -1,7 +1,6 @@
 # AsciiArtify – Kubernetes Local Development Concept
 
 ## 📌 Вступ
-## 🚀 Демонстрація (k3d)
 
 ## 🎥 Demo
 
