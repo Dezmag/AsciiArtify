@@ -91,8 +91,9 @@ Docker Desktop має обмеження ліцензії для комерці�
 ## 🎥 Demo
 
 <p align="center">
-  <img src="./demo.gif" width="800"/>
+  <img src="AsciiArtify/demo.gif" width="800"/>
 </p>
+
 
 ### 1. Створення кластеру
 
