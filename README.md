@@ -1,49 +1,100 @@
-# AsciiArtify
+# AsciiArtify – Kubernetes Local Development Concept
 
-> Kubernetes PoC for AI-based Image → ASCII conversion system
+## 📌 Вступ
+
+У цьому документі розглянуто три інструменти для локального розгортання Kubernetes кластерів:
+
+- Minikube
+- kind (Kubernetes IN Docker)
+- k3d
+
+Мета — обрати оптимальний інструмент для PoC стартапу AsciiArtify.
+
+---
+
+## ⚙️ Характеристики
+
+| Характеристика | Minikube | kind | k3d |
+|----------------|----------|------|-----|
+| Тип | VM / Container | Docker-based | Docker-based (k3s) |
+| Швидкість запуску | Середня | Висока | Дуже висока |
+| Підтримка ОС | Linux, macOS, Windows | Linux, macOS, Windows | Linux, macOS, Windows |
+| Kubernetes | Повний | Повний | Lightweight (k3s) |
+| Автоматизація | Так | Так (CI-friendly) | Так |
+| Вбудовані аддони | Так | Ні | Частково |
+| Ресурси | Високі | Середні | Низькі |
+
+---
+
+## ✅ Переваги та недоліки
+
+### 🔹 Minikube
+
+**Переваги:**
+- Повноцінний Kubernetes
+- Багато аддонів (dashboard, ingress)
+- Добра документація
+
+**Недоліки:**
+- Повільний запуск
+- Високе споживання ресурсів
+- Не ідеальний для CI
+
+---
+
+### 🔹 kind
+
+**Переваги:**
+- Дуже швидкий старт
+- Ідеально для CI/CD
+- Простий у використанні
+
+**Недоліки:**
+- Менше функцій
+- Немає вбудованих аддонів
+- Обмежений networking
+
+---
+
+### 🔹 k3d
+
+**Переваги:**
+- Найшвидший
+- Легковаговий (k3s)
+- Добре підходить для PoC
+
+**Недоліки:**
+- Менш "production-like"
+- Менше документації ніж Minikube
+
+---
+
+## ⚠️ Docker ліцензія та Podman
+
+Docker Desktop має обмеження ліцензії для комерційного використання.
+
+Альтернатива:
+- Podman (open-source, daemonless)
+
+⚠️ Проблеми:
+- не всі інструменти (kind, k3d) стабільно працюють з Podman
+- можливі проблеми з socket API
+
+Рекомендація:
+- Для PoC використовувати Docker
+- Для production розглянути Podman
+
+---
+
+## 🚀 Демонстрація (k3d)
+
+## 🎥 Demo
 
 <p align="center">
-  <img src="AsciiArtify/demo.gif" width="800"/>
+  <img src="./demo.gif" width="800"/>
 </p>
 
----
-
-## 📌 Overview
-
-AsciiArtify is a Proof of Concept project exploring local Kubernetes environments for deploying and testing a future ML-based ASCII-art generator.
-
-The goal is to evaluate lightweight Kubernetes solutions for development and CI/CD workflows.
-
----
-
-## ⚙️ Kubernetes Local Tools Comparison
-
-| Tool     | Architecture      | Startup Speed | Resource Usage | Best Use Case |
-|----------|------------------|---------------|----------------|--------------|
-| Minikube | VM-based         | Medium        | High           | Learning     |
-| kind     | Docker-based     | Fast          | Medium         | CI/CD        |
-| k3d      | k3s + Docker     | Very Fast     | Low            | PoC / Dev    |
-
----
-
-## 🏆 Recommendation
-
-For this PoC, **k3d** is recommended because:
-
-- ⚡ Fast cluster creation
-- 🪶 Lightweight (k3s)
-- 🐳 Docker-native workflow
-- 🔁 Perfect for rapid testing
-
----
-
-## 🚀 Quick Start
+### 1. Створення кластеру
 
 ```bash
 k3d cluster create mycluster
-
-kubectl apply -f demo/deployment.yaml
-kubectl apply -f demo/service.yaml
-
-kubectl get pods
-kubectl get svc
