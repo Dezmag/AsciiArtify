@@ -1,6 +1,13 @@
 # AsciiArtify – Kubernetes Local Development Concept
 
 ## 📌 Вступ
+## 🚀 Демонстрація (k3d)
+
+## 🎥 Demo
+
+<p align="center">
+  <img src="AsciiArtify/demo.gif" width="800"/>
+</p>
 
 У цьому документі розглянуто три інструменти для локального розгортання Kubernetes кластерів:
 
@@ -85,16 +92,6 @@ Docker Desktop має обмеження ліцензії для комерці�
 - Для production розглянути Podman
 
 ---
-
-## 🚀 Демонстрація (k3d)
-
-## 🎥 Demo
-
-<p align="center">
-  <img src="AsciiArtify/demo.gif" width="800"/>
-</p>
-
-
 ### 1. Створення кластеру
 
 ```bash
