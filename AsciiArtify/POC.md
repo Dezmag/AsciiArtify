@@ -226,5 +226,5 @@ Recommended next step:
 ## 🎥 Demo
 
 <p align="center">
-  <img src="../video.gif" width="800"/>
+  <img src="AsciiArtify/video.gif" width="800"/>
 </p>
