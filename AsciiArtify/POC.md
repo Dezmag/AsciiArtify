@@ -149,7 +149,7 @@ After login:
 Below is a demonstration of the full setup process:
 
 <p align="center">
-  <img src="./demo.gif" width="800"/>
+  <img src="video.gif" width="800"/>
 </p>
 
 ---
@@ -223,8 +223,4 @@ Recommended next step:
 * Connect Git repository and deploy first application via ArgoCD
 
 ---
-## 🎥 Demo
 
-<p align="center">
-  <img src="video.gif" width="800"/>
-</p>
