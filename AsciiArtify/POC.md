@@ -223,3 +223,8 @@ Recommended next step:
 * Connect Git repository and deploy first application via ArgoCD
 
 ---
+## 🎥 Demo
+
+<p align="center">
+  <img src="./video.gif" width="800"/>
+</p>
