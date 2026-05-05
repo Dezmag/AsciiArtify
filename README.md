@@ -5,7 +5,7 @@
 ## 🎥 Demo
 
 <p align="center">
-  <img src="AsciiArtify/demo.gif" width="800"/>
+  <img src="doc/video.gif" width="800"/>
 </p>
 
 У цьому документі розглянуто три інструменти для локального розгортання Kubernetes кластерів:
